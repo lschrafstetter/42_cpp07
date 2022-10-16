@@ -6,13 +6,13 @@
 #    By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/06 08:55:21 by lschrafs          #+#    #+#              #
-#    Updated: 2022/10/16 11:04:35 by lschrafs         ###   ########.fr        #
+#    Updated: 2022/10/16 11:48:38 by lschrafs         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 				= 	array
-COMPILER 		= 	c++
-CFLAGS 			= 	-g -Wall -Wextra -Werror -std=c++98
+NAME 				=		array
+COMPILER 		=		c++
+CFLAGS 			=   -Wall -Wextra -Werror -std=c++98
 
 SRCS_PATH 	= 	./src/
 
