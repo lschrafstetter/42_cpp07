@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 15:09:40 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/10/16 11:41:31 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/10/17 18:06:17 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,12 @@ class Array {
   }
 
   T &operator[](unsigned int i) {
+    if (i >= this->size_)
+      throw std::out_of_range("Index out of range");
+    return this->array_[i];
+  }
+
+  const T &operator[](unsigned int i) const {
     if (i >= this->size_)
       throw std::out_of_range("Index out of range");
     return this->array_[i];
