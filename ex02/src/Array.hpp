@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 15:09:40 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/10/17 18:06:17 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:02:49 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,9 @@ class Array {
       this->array_ = new T[copy.size_];
       for (unsigned int i = 0; i < copy.size_; i++)
         this->array_[i] = copy.array_[i];
+    } else {
+      size_ = 0;
+      array_ = NULL;
     }
   }
 
@@ -56,6 +59,7 @@ class Array {
     this->swap(*this, other);
     return *this;
   }
+
 
   T &operator[](unsigned int i) {
     if (i >= this->size_)

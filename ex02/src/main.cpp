@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 15:08:40 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/10/16 11:47:28 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:06:28 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,16 @@ int main(int, char**) {
   for (int i = 0; i < (int)array_str1.size(); i++)
     std::cout << array_str1[i] << std::endl;
   std::cout << std::endl;
+
+  std::cout << RED << std::endl
+            << "----- Copying empty Array ----- " << std::endl
+            << std::endl;
+
+  Array<int> empty;
+  Array<int> empty_copy(empty);
+
+  std::cout << empty.size() << std::endl;
+  std::cout << empty_copy.size() << std::endl;
   
   return 0;
 }
